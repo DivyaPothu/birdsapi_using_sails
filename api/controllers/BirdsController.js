@@ -6,13 +6,15 @@
  */
 
 module.exports = {
-	/*birds.find({visible:'true'}).exec(function (err, results){
+	version1:function(req,res){
+    Birds.find({visible:'true'}).exec(function (err, results){
   if (err) {
     return res.serverError(err);
   }
-  sails.log('Wow, there are %d users named Finn.  Check it out:');
-  return res.json(usersNamedFinn);
-})*/
+  sails.log('getting the details of visible birds.:');
+  return res.json(results);
+})
+  }
 
 
 /*birds.findOne({
@@ -28,7 +30,14 @@ module.exports = {
   sails.log('Found "%s"', finn.fullName);
   return res.json(finn);
 });*/
-
+ /**
+   * `SystemController.version()`
+   */
+/*  version: function (req, res) {
+    return res.json({
+      version: '0.1'
+    });
+  }*/
 
 };
 	//Birds.find({ select: ['birds'], visible: 'true'})

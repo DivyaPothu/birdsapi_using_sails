@@ -35,11 +35,8 @@ module.exports.routes = {
   '/': {
     view: 'homepage'
   },
-  '/Get' : {
-        controller: 'BirdsController',
-        action: 'Getbirds'
-    }
-
+  'get /version1':'BirdsController.version1'
+  
   /***************************************************************************
   *                                                                          *
   * Custom routes here...                                                    *
