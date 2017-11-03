@@ -8,7 +8,7 @@
 module.exports = {
 
   attributes: {
-  	id : {
+  	idd : {
   		required:true,
     type : 'string'
     },

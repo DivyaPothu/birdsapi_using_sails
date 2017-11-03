@@ -15,7 +15,7 @@ module.exports = {
 })*/
 
 
-birds.findOne({
+/*birds.findOne({
   visible:'true'
 }).exec(function (err, finn){
   if (err) {
@@ -27,7 +27,7 @@ birds.findOne({
 
   sails.log('Found "%s"', finn.fullName);
   return res.json(finn);
-});
+});*/
 
 
 };
